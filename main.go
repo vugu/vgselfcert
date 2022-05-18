@@ -25,7 +25,7 @@ func main() {
 
 	flag.Parse()
 
-	privateKey, err := ecdsa.GenerateKey(elliptic.P521(), rand.Reader)
+	privateKey, err := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
 	if err != nil {
 		log.Fatalf("Error during private key generation: %v", err)
 	}
